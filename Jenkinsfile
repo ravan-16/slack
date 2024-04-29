@@ -29,5 +29,7 @@ pipeline {
     		sh 'cp target/slack.war /home/mangesh/Documents/MAVEN/apache-tomcat-9.0.88/webapps'
     		echo "deployment has been done on UAT!"
 			}
-			}}}	
+			}}}
+
+}}	
 
