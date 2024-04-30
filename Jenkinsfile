@@ -25,7 +25,7 @@ pipeline {
         }
         stage ('Tomcat Server Deploy') {
             steps {
-                sh 'cp target/slack.war /home/jenkins/jenkins/apache-tomcat-9.0.86/webapps'
+                sh 'cp target/slack.war /home/mangesh/Documents/MAVEN/apache-tomcat-9.0.88/webapps'
             }
         }
     }
