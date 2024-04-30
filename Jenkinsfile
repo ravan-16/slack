@@ -23,9 +23,10 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage ('Tomcat Server Deploy') {
+        stage ('Slack') {
             steps {
-                sh 'cp target/slack.war /home/mangesh/Documents/MAVEN/apache-tomcat-9.0.88/webapps'
+            script {
+                 slackSend channel: 'devops-slack', message: 'Done'
             }
         }
     }
