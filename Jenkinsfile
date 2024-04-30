@@ -12,7 +12,7 @@ pipeline {
 		      }}
 		stage('Build') {
 	           steps {
-			  sh '/home/mangesh/Documents/MAVEN/apache-maven-3.9.6/ mvn install'
+			  sh '/home/mangesh/Documents/MAVEN/apache-maven-3.9.6/ sudo mvn install'
 	                 }}
 		stage('Deployment'){
 		    steps {
