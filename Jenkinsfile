@@ -23,11 +23,5 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage ('Slack') {
-            steps {
-            script {
-                 slackSend channel: 'devops-slack', message: 'Done'
-            }
-        }
     }
 }
